@@ -4,6 +4,7 @@ function Thermostat(){
   this.MAX_PS_ON = 25;
   this.MAX_PS_OFF = 32;
   this.PS = true;
+  this.RESET_TEMP = 20;
 
 
   Thermostat.prototype.temp = function() {
@@ -34,6 +35,10 @@ function Thermostat(){
 
   Thermostat.prototype.maxTemp = function() {
     return this.PS ? this.MAX_PS_ON : this.MAX_PS_OFF;
+  }
+
+  Thermostat.prototype.resetTemp = function() {
+    this.temperature = this.RESET_TEMP;
   }
 
 }
