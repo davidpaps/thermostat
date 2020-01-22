@@ -34,7 +34,6 @@ describe('thermostat', function() {
       }
       expect(thermostat.temp()).toBe(32)
     })
-    
   })
 
   describe('decrease temperature', function() {
