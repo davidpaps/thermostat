@@ -19,6 +19,22 @@ describe('thermostat', function() {
       thermostat.increaseTemp();
       expect(thermostat.temp()).toBe(21)
     })
+
+    it('with PS on, max temp is 25', function() {
+      for (var x = 0; x < 6; x++) {
+        thermostat.increaseTemp();
+      }
+      expect(thermostat.temp()).toBe(25)
+    })
+
+    it('with PS off, max temp is 32', function() {
+      thermostat.togglePowerSaving();
+      for (var x = 0; x < 13; x++) {
+        thermostat.increaseTemp();
+      }
+      expect(thermostat.temp()).toBe(32)
+    })
+    
   })
 
   describe('decrease temperature', function() {
