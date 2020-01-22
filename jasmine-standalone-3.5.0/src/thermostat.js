@@ -1,13 +1,17 @@
-function Thermostat(){}
+function Thermostat(){
+  this.temperature = 20
 
-Thermostat.prototype.temperature = function() {
-  return (20);
-};
 
-Thermostat.prototype.increaseTemperature = function(number) {
-  return (this.temperature() + number)
-};
+  Thermostat.prototype.temp = function() {
+    return this.temperature;
+  }
 
-Thermostat.prototype.decreaseTemperature = function(number) {
-  return (this.temperature() - number)
-};
+  Thermostat.prototype.increaseTemp = function() {
+    this.temperature += 1;
+  }
+
+  Thermostat.prototype.decreaseTemp = function() {
+    this.temperature -= 1;
+  }
+
+}
