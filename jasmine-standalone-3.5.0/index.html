@@ -2,10 +2,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <br>
-<center><label class="switch">
-  Power Saving<input type="checkbox" name="togglePowerSaving">
-  <span class="slider round" id="powerSaving"></span>
-</label></center>
+<center>Power Saving<input id="power" type="checkbox" name="togglePowerSaving"></center>
 <br>
 <center><text id="temperature"></text></center>
 <br>
@@ -20,7 +17,7 @@ document.getElementById("temperature").innerHTML = thermostat.temp();
 </script>
 
 <script>
-$(document).ready(function() {
+$(document).ready(function() {  
   
   $('#increase').click(function() {
     thermostat.increaseTemp();
@@ -37,9 +34,13 @@ $(document).ready(function() {
     $('#temperature').text(thermostat.temp());
   }) 
 
-  
+  $('#power').click(function() {
+    thermostat.togglePowerSaving();
+    $('#temperature').text(thermostat.temp());
+  }) 
 
-})
+}) 
+
 </script>
 
 
