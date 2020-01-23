@@ -1,12 +1,6 @@
 <script src="src/thermostat.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
-
-<!-- .getElementById     .addEventListener -->
-
-
-
 <br>
 <center><label class="switch">
   Power Saving<input type="checkbox" name="togglePowerSaving">
@@ -20,12 +14,10 @@
 <center><button id="reset">Reset</button></center>
 <br>
 
-
 <script>
 var thermostat = new Thermostat(); 
 document.getElementById("temperature").innerHTML = thermostat.temp();
 </script>
-
 
 <script>
 $(document).ready(function() {
@@ -34,6 +26,18 @@ $(document).ready(function() {
     thermostat.increaseTemp();
     $('#temperature').text(thermostat.temp());
   }) 
+
+  $('#decrease').click(function() {
+    thermostat.decreaseTemp();
+    $('#temperature').text(thermostat.temp());
+  }) 
+
+  $('#reset').click(function() {
+    thermostat.resetTemp();
+    $('#temperature').text(thermostat.temp());
+  }) 
+
+  
 
 })
 </script>
