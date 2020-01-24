@@ -13,6 +13,7 @@ $(document).ready(function() {
   $('#decrease').click(function() {
     thermostat.decreaseTemp();
     updateTemperature();
+     $('#audioCold').trigger('play'); 
   }) 
 
   $('#reset').click(function() {
