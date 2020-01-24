@@ -19,11 +19,13 @@ $(document).ready(function() {
   $('#reset').click(function() {
     thermostat.resetTemp();
     updateTemperature();
+    $('#audioReset').trigger('play'); 
   }) 
 
   $('#power').click(function() {
     thermostat.togglePowerSaving();
     updateTemperature();
+    $('#audioPower').trigger('play'); 
   }) 
 
   function updateTemperature() {
