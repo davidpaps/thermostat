@@ -7,12 +7,12 @@ $(document).ready(function() {
   $('#increase').click(function() {
     thermostat.increaseTemp();
     updateTemperature();
+    $('#audioHot').trigger('play'); 
   }) 
 
   $('#decrease').click(function() {
     thermostat.decreaseTemp();
     updateTemperature();
-    $('#audioHot').play(); //
   }) 
 
   $('#reset').click(function() {
