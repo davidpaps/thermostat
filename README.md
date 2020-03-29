@@ -22,4 +22,18 @@ This will display the `Jasmine Test Suite` showing 10 passing tests.
 
 ---
 
-<img src='./public/images/thermostat.src' />
+#### Starting Temperature
+
+<img src='./jasmine/public/image/start.png' />
+
+#### Power Saving Mode Off - Max Temperature
+
+<img src='./jasmine/public/image/max.png' />
+
+#### Minimum Temperature
+
+<img src='./jasmine/public/image/min.png' />
+
+#### Seach for Another Cities Weather
+
+<img src='./jasmine/public/image/search.png' />
