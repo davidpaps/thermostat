@@ -10,7 +10,7 @@ Week 5 Afternoon Challenge at Makers. This was a collaborative exercise, pairing
 - Power Saving - when turned off, maximum temperature is now 32 degrees (PS on as default)
 - Reset function returns temperature to 20 degrees
 
-jQuery was used in order to add unique audi to the `+`, `-`, `Power Saving` and `Reset` buttons when clicked, these are all different.
+jQuery was used in order to add unique audio to the `+`, `-`, `Power Saving` and `Reset` buttons when clicked, these are all different.
 
 The main temperature display also changes colour:
 
